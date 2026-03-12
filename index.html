@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Başar Ünder - Composer & Sound Designer</title>
+    
+    <!-- SEO Meta Etiketleri -->
+    <meta name="description" content="Award-winning Composer, Sound Designer, Lecturer based in İstanbul.">
+    <meta name="keywords" content="Başar Ünder, Composer, Sound Designer, İstanbul, Music">
+    <meta name="author" content="Başar Ünder">
+
+    <!-- Tailwind CSS (Hızlı ve kolay stillendirme için) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome (İkonlar için) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts (Daktilo/Monospace tarzı font için) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Özel Ayarlar ve Tailwind Konfigürasyonu -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'mono': ['"Courier Prime"', 'monospace'],
+                    },
+                    colors: {
+                        'brand-orange': '#ed5c2b', // Tasarımdaki ikon rengi
+                        'brand-bg': '#f6f7f8',     // Tasarımdaki arkaplan rengi
+                        'brand-text': '#333333',   // Ana metin rengi
+                        'brand-subtext': '#666666' // Alt metin rengi
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Courier Prime', monospace;
+            background-color: #f6f7f8;
+        }
+        
+        /* Butonlar için ortak stil sınıfı */
+        .link-btn {
+            @apply bg-white px-5 py-3 rounded shadow-sm hover:shadow-md transition-all duration-300 flex items-center gap-3 text-brand-text hover:-translate-y-0.5 text-sm md:text-base min-w-[140px] justify-center;
+        }
+
+        .link-btn i {
+            @apply text-brand-orange text-lg;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4 md:p-8 lg:p-12">
+
+    <!-- Ana Konteyner -->
+    <div class="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        
+        <!-- Sol Sütun: Yazılar ve Linkler -->
+        <div class="flex flex-col items-center lg:items-end text-center lg:text-right order-2 lg:order-1 w-full">
+            
+            <div class="flex flex-col items-center w-full max-w-lg">
+                
+                <!-- Başlık ve Açıklama -->
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-text mb-6 tracking-wide">
+                    Başar Ünder
+                </h1>
+                
+                <p class="text-brand-subtext mb-12 text-sm md:text-base leading-relaxed text-center">
+                    Award-winning Composer, Sound Designer, Lecturer<br>
+                    based in İstanbul
+                </p>
+
+                <!-- Linkler Bölümü (Tasarımdaki gibi sıralı satırlar) -->
+                <div class="flex flex-col gap-4 w-full items-center">
+                    
+                    <!-- 1. Satır: IMDB, Spotify, SoundCloud -->
+                    <div class="flex flex-wrap justify-center gap-4 w-full">
+                        <a href="https://www.imdb.com/name/nm6774096/" target="_blank" rel="noopener noreferrer" class="link-btn">
+                            <i class="fa-brands fa-imdb"></i> IMDB
+                        </a>
+                        <a href="https://open.spotify.com/artist/7svZ1fmBh8aSV4tRLOvmFO?si=ZPvyQiSyQTGW7kCS4ADc6w" target="_blank" rel="noopener noreferrer" class="link-btn">
+                            <i class="fa-brands fa-spotify"></i> Spotify
+                        </a>
+                        <a href="https://soundcloud.com/basarunder" target="_blank" rel="noopener noreferrer" class="link-btn">
+                            <i class="fa-brands fa-soundcloud"></i> SoundCloud
+                        </a>
+                    </div>
+
+                    <!-- 2. Satır: YouTube, Instagram -->
+                    <div class="flex flex-wrap justify-center gap-4 w-full">
+                        <a href="https://www.youtube.com/basarunder" target="_blank" rel="noopener noreferrer" class="link-btn">
+                            <i class="fa-brands fa-youtube"></i> YouTube
+                        </a>
+                        <a href="https://instagram.com/basarunder" target="_blank" rel="noopener noreferrer" class="link-btn">
+                            <i class="fa-brands fa-instagram"></i> Instagram
+                        </a>
+                    </div>
+
+                    <!-- 3. Satır: LinkedIn, Twitter -->
+                    <div class="flex flex-wrap justify-center gap-4 w-full">
+                        <a href="https://www.linkedin.com/in/basarunder/" target="_blank" rel="noopener noreferrer" class="link-btn">
+                            <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                        </a>
+                    </div>
+
+                    <!-- 4. Satır: Sonik Butik, eqho -->
+                    <div class="flex flex-wrap justify-center gap-4 w-full">
+                        <a href="https://www.sonikbutik.com/" target="_blank" rel="noopener noreferrer" class="link-btn">
+                            <i class="fa-solid fa-house"></i> Sonik Butik
+                        </a>
+                        <a href="https://open.spotify.com/artist/4YdZYGdSZQAMphazMlV2BF?si=8In2cgYfRq-f-5UwtZX9HQ" target="_blank" rel="noopener noreferrer" class="link-btn">
+                            <i class="fa-brands fa-spotify"></i> eqho
+                        </a>
+                    </div>
+
+                    <!-- 5. Satır: Varlık Dergisi Röportajı -->
+                    <div class="flex flex-wrap justify-center gap-4 w-full">
+                        <a href="http://varlikonline.com/dosyalar/pdf/579.pdf" target="_blank" rel="noopener noreferrer" class="link-btn !min-w-[280px]">
+                            <i class="fa-solid fa-file-lines"></i> Varlık Dergisi Röportajı
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Sağ Sütun: Fotoğraf -->
+        <div class="order-1 lg:order-2 flex justify-center w-full">
+            <div class="relative w-full max-w-[400px] lg:max-w-[500px]">
+                <!-- 
+                  ÖNEMLİ: Kendi fotoğrafınızı eklemek için aşağıdaki 'src' kısmındaki linki
+                  projenizdeki resmin adıyla (örn: 'profile.jpg') değiştirin.
+                -->
+                <img 
+                    src="20137220_Under_Basar.jpg" 
+                    alt="Başar Ünder" 
+                    class="w-full h-auto object-cover"
+                    style="aspect-ratio: 3/4; object-position: center top;"
+                >
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
